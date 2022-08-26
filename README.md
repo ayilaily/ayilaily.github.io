@@ -1,3 +1,3 @@
-# ayilaily.github.io
-For Lab 1
+# My Website
+
 Hello World
