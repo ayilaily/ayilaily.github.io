@@ -1,53 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>My Hometown</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Linking my CSS file -->
+  <link rel="stylesheet" href="mystyle.css">
+
+  <title>CSS Design</title>
 </head>
 <body>
-<h1> <ol> The Heart of East Kazakhstan </ol> </h1> <hr>
-<img src="index0.jpg" alt="Sibinskie Ozera" width="1500" height="500">
-<h2> <ol> History of the city </ol> </h2>
-<p> The city was founded in 1720 at the confluence of the Irtysh and Ulba rivers as a fort and trading post named Ust-Kamennaya. It was established according to the order of the Russian Emperor Peter the Great, who sent a military expedition headed by major Ivan Vasilievich Likharev in the search of Yarkenda gold. Likharev’s expedition directed up the Irtysh River to Zaysan Lake. There, at the confluence of the Ulba and the Irtysh rivers the new fortress was laid – the Ust-Kamennaya Fortress. The Ust-Kamennaya Fortress appeared on the map of the Russian Empire, the very southern end of the Irtysh line. In 1868 the city became the capital of the Semipalatinsk Oblast. It was the site of Georgy Malenkov's 30-year internal exile, during which he managed a local hydroelectric plant.
+  <!-- HEADER -->
+  <header class="header">
+    <div class="banner">Web Programming...</div>
+  </header>
 
-One of the main industrial enterprises, the Ulba Metal Works (UMW) which produced and still produces uranium products, was kept entirely secret despite it employing thousands of workers. An explosion at the UMW's beryllium production line in 1990 led to the diffusion of a highly toxic beryllium-containing "cloud" over the city. The health effects of this incident are not entirely known, partly because the incident was kept secret by the Soviet authorities. </p> 
+  <!-- Navbar -->
+  <nav class="topnav">
+      <a class="logo" href="#">
+        <img src="logo.jpg" alt="logo" width="1500px" height="500px">
+      </a>
+      <ul class="menu">
+        <li class="second item"><a class="active" href="#task">Task</a></li>
+        <li class="second item"><a href="#requirements">Requirements</a></li>
+        <li class="second item"><a href="#submission">Submission</a></li>
+        <li class="second item"><a href="#grading">Grading</a></li>
+        <li class="second item"><a href="#deadline">Deadline</a></li>
+        <li class="second item"><a href="#">SignIn</a></li>
+      </ul>
+    </nav>
 
-<p> Follow the link to find more information on History here: <a href="https://www.sutori.com/en/story/history-of-ust-kamenogorsk--hTGvwVEHCxtPNBLNSWJVzswP">History of Oskemen</a> </p>
-<img src="index1.jpg" alt="Irtysh river" width="600" height="400"> <hr>
-<h2> <ol> Economy </ol> </h2>
-<p> The city developed into a major mining and metallurgical center during the Soviet period. Processing of non-ferrous metals, especially uranium, beryllium, tantalum, copper, lead, silver and zinc remain important. It is a center for the construction industry producing manufactured housing and ferroconcrete articles. The post-war industrial history of the city is very closely intertwined with the Soviet nuclear bomb project, and the city was therefore kept closed to outsiders.
+  <!-- Main Content -->
+  <section class="main_content">
+    <h1 id="main-heading" class="topic" style = "color: green;">
+      Lab 4 - Designing with CSS 
+    </h1>
+    <hr>
+    <article id="task">
+      <h2 style = "color: green;">Task</h2>
+      <p class="second">
+        <img src="nature.gif" alt="" width="100px" height="100">
+        As you have alredy learned in the last lecture, 
+        CSS is about the presentation of the documents
+        like HTML or XML.
+        So, in this lab assignment you need to form a group of two people and then together apply
+        CSS styling rules to make this template HTML file look
+        beautiful and interesting.  
+      </p>
+      <p class="second">
+        There are no 
+        limits to what techniques you use and how you 
+        ultimately solve this task. 
+        However, there are some minimal requirements
+        which are explained in the next section below.
+        <a href="#requirements">Next...</a>
+      </p>
+    </article>
+    <article id="requirements">
+      <h2 style = "color: green;">Requirements</h2>
+      <p class="second">
+        
+        The main requirement for this task is to 
+        style this HTML document without any 
+        changes (including adding new and deleting the existing elements) to itself except for these cases: 
+        <ul>
+          <li>
+            You can add <strong style = "color: red;">id</strong>
+            and <strong style = "color: red;">class</strong> 
+            attributes to the ncessary elements. 
+            </li>
+            <li>
+            You can replace the 
+            images in the defined elements within this document with your
+            own ones. 
+            </li><li>
+            Notice that there is a place for a 
+            large banner on the top of the page,
+            you <strong style = "color: red;">must</strong> place an image there only using CSS.
+            </li>
+            <li>
+              You <strong style = "color: red;">must</strong> write your names in the specified fields below.
+            </li>
+            <li>You can change the location
+              of in the map below or replace it with the image.
+            </li>
+        </ul>
+      </p>
+      <p class="second">
+        In your stylesheet you <strong style = "color: red;">must</strong>
+         use these selectors:
+        <ul>
+          <li>Element selectors;</li>
+          <li>Class selectors;</li>
+          <li>Attribute selectors;</li>
+          <li>ID selectors.</li>
+          <li>Pseudo-class selectors.</li>
+        </ul>
+      </p>
+      <p class="second">
+        Also, you <strong style = "color: red;">must</strong> 
+        use the necessary CSS properties
+        and demonstrate the following changes
+        of the elements:
+        <ul>
+          <li>font and background colors;</li>
+          <li>font family and size;</li>
+          <li>margin, padding and borders;</li>
+          <li>image sizes (width and height);</li>
+          <li>text alignment (horizontal and vertical);</li>
+        </ul>
+        Additionally, a special focus <strong style = "color: red;">must</strong> 
+        be done to the menu links.        
+        They need to change their status appropriately 
+        (active, hover, visited)
+        as well as be placed in a natural way,
+        i.e. horizontally or vertically. 
+        <a href="#submission">Next...</a>
+      </p>
+    </article>
+    <article id="submission">
+      <h2 style = "color: green;">Submission</h2>
+      <p class="second">
+       As usual, you <strong style = "color: red;">must</strong> submit 
+       your work via Github. All the files and images need to go to 
+       your <strong style = "color: red;"> <i>username.github.io</i> </strong>repository. 
+       Also, this page must be available 
+       through this domain name.
+      </p>
+      <h3 style = "color: green;">Group</h3>
+      <p class="second">
+        Since this is a group project, i.e. a team of two members,
+        it is required to insert a photo of your group
+        in this <strong style = "color: red;">&lt;img&gt;</strong> element and write your names in the
+        following list items. <br>
+         <img src="planets.jpeg" alt="" width="400px" height="210">
 
-The number of enterprises in Oskemen is very high relative to the number of people living there. There are about 169 firms according to the data from 2002. Most of them are industrial firms, working in mining and processing of raw materials, mostly heavy metals.
+        <ul>
+          <li id="last">Aliya Tolepbek</li>
+          <li id="last">Mizhgona Nuraliyeva</li>
+        </ul>
+        Also, to submit your group members, 
+        please fill in the this 
+        <a href="#">Google Sheet</a> form. 
+        <a href="#grading">  Next...</a>
+      </p>
+    </article>
+    <article id="grading">
+      <h2 style = "color:green;">Grading</h2>
+      For this assignment you will get 
+      <strong style = "color: red;">80 points</strong>  in total.
+      The final score is the sum of the points 
+      for each of the criteria below.
+      This score will be the same for both 
+      of the team members.
+      <table>
+        <tr>
+          <th>Criteria</th>
+          <th>Points</th>
+        </tr>
+        <tr>
+          <td>Group is formed </td>
+          <td>10 pts</td>
+        </tr>
+        <tr>
+          <td>CSS file is linked to the document</td>
+          <td>5 pts</td>
+        </tr>
+        <tr>
+          <td>Banner image is present</td>
+          <td>5 pts</td>
+        </tr>
+        <tr>
+          <td>Menu is styles appropriately</td>
+          <td>5 pts</td>
+        </tr>
+        
+        <tr>
+          <td>Group photo is present </td>
+          <td>5 pts</td>
+        </tr>
+         <tr>
+          <td>HTML file is unchanged</td>
+          <td>5 pts</td>
+        </tr>
+        <tr>
+          <td>Required selectors are used</td>
+          <td>10 pts</td>
+        </tr>
+        <tr>
+          <td>Required CSS properties are used</td>
+          <td>10 pts</td>
+        </tr>
+        <tr>
+          <td>Website is available online</td>
+          <td>10 pts</td>
+        </tr>
+        <tr>
+          <td>Website looks nice and not broken</td>
+          <td>10 pts</td>
+        </tr>
+        <tr>
+          <td>Extra cool stuff is used</td>
+          <td>5 pts</td>
+        </tr>
+        </tr>
+      </table>
+    </article>
+  </section>
 
-Kazzinc is a major fully integrated zinc producer with considerable copper, precious metals and lead credits. The company was established in 1997 through the merger of Eastern Kazakhstan's three main non-ferrous metal companies - Ust-Kamenogorsk Lead and Zinc Combinate, Leninogorsk Polymetallic Combinate and Zyryanovsk Lead Combinate. The company continues to develop seeking to have its stable position among the world's five lowest cost zinc producers. Apart from zinc it produces on a large-scale lead, silver, copper, and many more.
-Titanium-Magnesium plant specializes in production and selling nonferrous metals.
-Ulba metallurgical plant produces hi-tech uranium, beryllium and tantalum products for the needs of atomic engineering, electronics, metallurgical and other spheres of operation. The company is among the leaders in production of their specific goods.
-Apart from the mining and processing companies, there are numerous thermoelectric power stations and about five hydropower plants concentrated around the Ust-Kamenogorsk region of Eastern Kazakhstan.
-The highest lock in the world is the Oskemen Lock[14] and lies at Ablaketka where it allows river traffic to pass around a hydroelectric dam on the Irtysh river. It has a drop of more than 40m.
+  <!-- Aside Information -->
+  <aside>
+    <h3 style = "color: green;">Important</h3>
+    <section class="aside_content">
+      <article id="deadline">
+        <h4>Deadlines:</h4>
+        There are two deadlines - one for 
+        forming a group and the other is for the 
+        submission of the assignment itself.
+        <ul>
+          <li>Group: Sep. 9, 2022, 23:59</li>
+          <li>Submission: Sep. 18, 2022, 23:59</li>
+        </ul>
+        <p class="second">
+        Missing the deadline for the group formation will result in 
+        <strong style = "color: red;"> not getting any points</strong> for the corresponding criteria. <br>
+        </p>
+        <p>And, as usual, missing the deadline for submittion of your work will result in reduction of your score by 50%.</p>
+        
+        <a href="#">More...</a>
+      </article>
+      </section>
+     
+        <h3 style = "color: green;">Some Dummy Content</h3>
+       <section>
+        <article class="column">
+        <h4>Article 1</h4>
+        <p class="second">
+          Lorem ipsum dolor sit amet consectetur, 
+          adipisicing elit. Odit, fugiat eveniet! 
+          Optio quia perspiciatis earum ipsa dicta 
+          porro dolorum facere laudantium repellat 
+          ad necessitatibus asperiores dolor, molestias 
+          officiis corrupti iusto.
+          <a href="#">More...</a>
+        </p>
+      </article>
+      <article class="column">
+        <h4>Article 2</h4>
+        <p class="second">
+          Lorem ipsum dolor sit amet consectetur, 
+          adipisicing elit. Odit, fugiat eveniet! 
+          Optio quia perspiciatis earum ipsa dicta 
+          porro dolorum facere laudantium repellat 
+          ad necessitatibus asperiores dolor, molestias 
+          officiis corrupti iusto.
+          <a href="#">More...</a>
+        </p>
+      </article>
+      <article class="column">
+        <h4>Article 3</h4>
+        <p class="second">
+          Lorem ipsum dolor sit amet consectetur, 
+          adipisicing elit. Odit, fugiat eveniet! 
+          Optio quia perspiciatis earum ipsa dicta 
+          porro dolorum facere laudantium repellat 
+          ad necessitatibus asperiores dolor, molestias 
+          officiis corrupti iusto.
+          <a href="#">More...</a>
+        </p>
+      </article>
+    </section>
+  </aside>
 
-A new car plant owned jointly by AvtoVAZ and Azia Avto, which will produce 120,000 cars a year, will be opened in 2016. </p>
-<p> Find out more about investment opportunities in Oskemen: <a href="https://invest.e-vko.kz/en/menu/o-regione/rajonyi-vko/goroda-oblastnogo-podchineniya/gorod-ust-kamenogorsk.html">Investments</a> </p>
-<img src="index2.jpg" alt=" 'Baiterek'" width="600" height="400"> <hr>
-<h2> <ol> Ecology </ol> </h2>
-<p> As expected in a city with a lot of heavy industry, the atmosphere of the city holds the by-products of the heavy metals production: nitrogen dioxide, sulfur dioxide, Zn, Cd, Cl, As, C, Be, phenol, benzol, NaOH, NH3, radioactivity etc. in general there are about 170 polluting components found in the city.
-
-There are 3 impact points that are influenced in Oskemen. The atmosphere is hit most. With a poor urban ventilation (the average percentage of calm 48%), with a large number of vehicles and stationary sources relevance of air pollution in Oskemen is not in doubt. The concentration of harmful substances in the air is increasing each year because of the nature of the companies which are looking for increases in the production and profits. As usual, the pollution is enhanced by the low quality of car fuels and an increase in the number of cars. As a result of all this, Oskemen is often recognized as one of the most polluted regional centers of Kazakhstan.
-
-The most polluted rivers of the Republic are those flowing through the territory of the East Kazakhstan region, where the highest index of surface water pollution is observed in the mining areas and enrichment of polymetallic ores. Mostly the water is affected through the industrial wastes and the storages of waste. Contamination of the water with lead, selenium, cadmium, nitrates spreads on many kilometers as a consequence of which a few drinking water intakes in the Western part of the city are closed or to be closed.
-
-The soil close to the industry territories holds the solid wastes of the firms and becomes less suitable for planting. An increasing number of industrial waste requires a large area for the storage of waste.
-
-As a result of large production of uranium and presence of other radioactive elements such thorium, radon or radioactive dust the radioactive background of the city is remarkable with the zones of radioactive anomaly which are spread around the city.
-
-Oskemen is known to be the leader in Kazakhstan by the number of people having respiratory problems and the diseases of immune system. The statistics show that the most frequent diseases are respiratory diseases and urogenital system diseases. In the last years, the number of people having cancer has been also increasing. </p>
-<img src="index3.jpg" alt="Ecological situation" width="600" height="400"> <hr> 
-<ol> <h2>  Tourist Information  </h2> </ol>
-<p>  
-	<div class="row">  
-  <div class="column"> <ul> <li> <b> <a href="sightseeings.html">Sightseeings</a> </b> </li> </ul> </div>
-  <div class="column"> <ul> <li> <b> <a href="around.html">Nature around Oskemen</a> </b> </li> </ul> </div>
-</div>
-	<p> You can plan your visit to Oskemen here: <a href="https://visitkazakhstan.kz/ru/guide/tours/5/25/">Visit Kazakhstan</a>. We are waiting for you! </p>
-<h5> 
+  <!-- FOOTER -->
+  <footer>
+    <div class="contacts">
+      <div >
+        <h5>Contacts</h5>
+        <p>
+          Nazarbayev University <br>
+          53 Kabanbay Batyr ave. <br>
+          Block 7, Room 7.422 <br>
+          Ph.: +7-7172-123-4567 <br>
+          <a href="mailto:info@naturallyinspired.com" class="email">
+            info@naturallyinspired.com
+          </a>
+        </p>
+      </div>
+      <div class="map">
+          <iframe src="https://maps.google.com/maps?q=Nazarbayev%20university,%20Nur-Sultan&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                  frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+          </iframe>
+      </div>
+    </div>
+    <div class="categories">
+      <h5 class="footer">Top 10 Categories</h5>
+      <ul>
+        <li><a href="#">Category 1</a></li>
+        <li><a href="#">Category 2</a></li>
+        <li><a href="#">Category 3</a></li>
+        <li><a href="#">Category 4</a></li>
+        <li><a href="#">Category 5</a></li>
+        <li><a href="#">Category 6</a></li>
+        <li><a href="#">Category 7</a></li>
+        <li><a href="#">Category 8</a></li>
+        <li><a href="#">Category 9</a></li>
+        <li><a href="#">Category 10</a></li>
+      </ul>
+    </div>
+    <div class="quick_links">
+      <h5 class="button">Quick Links</h5>
+      <ul>
+        <li><a href="#">Item1</a></li>
+        <li><a href="#">Item2</a></li>
+        <li><a href="#">Item3</a></li>
+        <li><a href="#">Item4</a></li>
+        <li><a href="#">Item5</a></li>
+        <li><a href="#">Item6</a></li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>
