@@ -1,0 +1,445 @@
+CSS code notes: 
+
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-size: 1.2em
+	margin: 10;
+	padding: 10;
+}
+
+.header {
+  background-color: aquamarine;
+  text-align: center;
+  padding: 20px;
+  color: forestgreen;
+   border: 3px solid red;
+}
+
+/* Navigation */
+nav {
+  position: relative;
+  color: white;
+  background-color: black;
+  border: 3px solid brown;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  display: block;
+  color: aquamarine;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Links - change color on hover */
+.topnav a:hover {
+  background-color: aquamarine;
+  color: aquamarine;
+}
+/* The navbar container */
+.topnav {
+  overflow: hidden;
+  background-color: darkgrey;
+}
+
+h1[style] {
+text-align: center;
+}
+h1[style] {
+text-align: center;
+background-color: aquamarine !important;
+font-family: cursive;
+font-size: xx-large;
+border-style: dashed;
+}
+h2[style] {
+text-align: center;
+font-family: cursive;
+font-size: x-large;
+border-style: dashed;
+background-color: aquamarine;
+}
+.second {
+	color: rebeccapurple;
+}
+li.item {
+	color: rebeccapurple;
+}
+ul > li {
+	color: rebeccapurple;
+}
+body li {
+	color: rebeccapurple;
+}
+#last {
+	color: seagreen;
+	font-size: 15pt;
+}
+div {
+	padding-top: 24px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 24px;
+}
+selector:pseudo-class{
+	property: value;
+}
+/* unvisited link */
+a:link {
+color: red;
+}
+/* visited link */
+a:visited {
+color: deeppink;
+}
+/* mouse over link */
+a:hover {
+color: forestgreen;
+}
+/* selected link */
+a:active {
+color: blue;
+}
+p::first-letter {
+color: forestgreen;
+}
+p::first-line {
+color: forestgreen;
+}
+p::selection {
+color: rebeccapurple;
+}
+::marker {
+color: rebeccapurple;
+}
+
+/* Create three equal columns that float next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.footer {
+  background-color: aquamarine;
+  text-align: center;
+  padding: 10px;
+}
+.button {
+  background-color: aquamarine; 
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+______________________________________________________________
+
+
+
+
+
+#hamburger {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hamburger-icon {
+  display: inline-block;
+  padding-left: .5em;
+  padding-right: .5em;
+  background-color: rgb(165, 14, 14);
+}
+
+.hamburger-icon::before {
+  /* Hamburger icon codes: 
+    HTML - #9776
+    CSS - \2630 */
+  content: "\2630";
+}
+
+.nav-toggle {
+  display: none;
+  width: 100%;
+  list-style-type: none;
+  text-align: center;
+  border: 3px solid blue;
+  background-color: black;
+}
+
+.nav-toggle li {
+  width: 100%;
+}
+
+.nav-toggle a {
+  display: inline-block;
+  width: 100%;
+  color: black;
+  text-decoration: none;
+}
+
+.nav-toggle a:hover {
+  background-color: rgb(165, 14, 14);
+}
+
+/* Key component */
+#hamburger:checked~.nav-toggle {
+  display: block;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1.5em;
+  }
+
+  .nav-toggle,
+  #hamburger:checked~.nav-toggle {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+
+  #hamburger,
+  .hamburger-icon {
+    display: none;
+  }
+}
+
+/* Main content */
+section {
+  display: flex;
+  flex-wrap: wrap;
+  border: 3px solid red;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+p {
+  border: 3px solid green;
+}
+
+/* Flexbox approach */
+
+/* Mobile-first layout */
+.first {
+  order: 2;
+  background-color: lightgray;
+  width: 100%;
+}
+
+.second {
+  order: 1;
+  background-color: lightcyan;
+  width: 100%;
+}
+
+.third {
+  order: 3;
+  background-color: lightpink;
+  width: 100%;
+}
+
+@media screen and ((min-width: 768px) and (max-width: 1023px)) {
+  .first {
+    order: 2;
+    width: 50%;
+  }
+
+  .second {
+    order: 1;
+    width: 100%;
+  }
+
+  .third {
+    order: 3;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .first {
+    order: 1;
+    width: 25%;
+  }
+
+  .second {
+    order: 2;
+    width: 50%;
+  }
+
+  .third {
+    order: 3;
+    width: 25%;
+  }
+}
+
+/* Grid View */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  width: 100%;
+}
+
+/* For tablets: */
+@media screen and ((min-width: 768px) and (max-width: 1023px)) {
+  .col-s-1 {
+    width: 8.33%;
+  }
+
+  .col-s-2 {
+    width: 16.66%;
+  }
+
+  .col-s-3 {
+    width: 25%;
+  }
+
+  .col-s-4 {
+    width: 33.33%;
+  }
+
+  .col-s-5 {
+    width: 41.66%;
+  }
+
+  .col-s-6 {
+    width: 50%;
+  }
+
+  .col-s-7 {
+    width: 58.33%;
+  }
+
+  .col-s-8 {
+    width: 66.66%;
+  }
+
+  .col-s-9 {
+    width: 75%;
+  }
+
+  .col-s-10 {
+    width: 83.33%;
+  }
+
+  .col-s-11 {
+    width: 91.66%;
+  }
+
+  .col-s-12 {
+    width: 100%;
+  }
+}
+
+/* For desktop: */
+@media screen and (min-width: 1024px) {
+  .col-1 {
+    width: 8.33%;
+  }
+
+  .col-2 {
+    width: 16.66%;
+  }
+
+  .col-3 {
+    width: 25%;
+  }
+
+  .col-4 {
+    width: 33.33%;
+  }
+
+  .col-5 {
+    width: 41.66%;
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-7 {
+    width: 58.33%;
+  }
+
+  .col-8 {
+    width: 66.66%;
+  }
+
+  .col-9 {
+    width: 75%;
+  }
+
+  .col-10 {
+    width: 83.33%;
+  }
+
+  .col-11 {
+    width: 91.66%;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
+}
+
+footer {
+  background-color: lightgoldenrodyellow;
+  border: 3px solid green;
+}
+
+div {
+  border: 3px solid black;
+}
+
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  list-style-type: none;
+}
+
+footer li {
+  display: block;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  footer ul {
+    flex-wrap: nowrap;
+  }
+}
