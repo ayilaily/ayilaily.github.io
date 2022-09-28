@@ -40,7 +40,7 @@ nav {
 
 /* Links - change color on hover */
 .topnav a:hover {
-  background-color: mediumaquamarine;
+  background-color: aquamarine;
   color: aquamarine;
 }
 /* The navbar container */
@@ -197,7 +197,7 @@ ______________________________________________________________
 .nav-toggle a {
   display: inline-block;
   width: 100%;
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
